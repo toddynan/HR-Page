@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Exemplo Férias</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> << Voltar </a>
+
+        </nav>
+        <h3>InfoJobs</h3>
+        <h4>Exemplo Férias</h4>
+    </header>
+    <!--
+    <div class="compre">
+        <h5>Compre agora mesmo</h5>
+        <button>COMPRAR</button>
+    </div>
+    -->
+    <br><br><br><br><br>
+
+
+    <br>
+
+    <section class="container">
+        <h2>Férias</h2>
+        <p>De acordo com a lei trabalhista, o funcionário que sai de férias tem o direito de receber a remuneração mensal adiantada mais um adicional, que equivale a um terço do pagamento.</p>
+        <p>O valor total deve ser depositado na conta do funcionário até dois dias antes do início do período de descanso.</p>
+        <br><br>
+
+        <div class="resposta">
+            <script type="text/javascript">
+                
+                let salario = Number(prompt("Insira o seu atual salário e, caso necessário, informe as casas decimais com ponto ao invés de vírgula."))
+                // fazendo com que o número tenha duas casas decimais
+                // toFixed converte para string
+                salario = parseFloat(salario.toFixed(2))
+
+                let abono = salario/3
+                abono = parseFloat(abono.toFixed(2))
+
+                let bruto = salario+abono
+                bruto = parseFloat(bruto.toFixed(2))
+
+                let imposto = (bruto/100)*9
+                imposto = parseFloat(imposto.toFixed(2))
+
+                let liquido = bruto-imposto
+                liquido = parseFloat(liquido.toFixed(2))
+
+                document.write("Salário informado: R$ "+salario+"<br />"+"<br />")
+                document.write("Abono de 1/3: R$ "+abono+"<br />"+"<br />")
+                document.write("Valor bruto de Férias: R$ "+bruto+"<br />"+"<br />")
+                document.write("Valor de imposto: R$ "+imposto+"<br />"+"<br />")
+                document.write("Valor a receber: R$ "+liquido+"<br />"+"<br />")
+            </script>
+        </div>
+    </section>
+
+
+    <br>
+    <br>
+    <!--
+    <section class="container" id="formulario">
+        <h2>Selecione um produto para mais informações</h2>
+
+        <form action="#" method="" target="_blank"> 
+        action é o que será feito (back-end) # é para não fazer nada.
+        método get coloca as infos do form na barra de endereço. o post maqueia. 
+        o target é para onde será enviado. _blank é para abrir outra página
+            <p class="formulario-contato">
+                <label for="nome">Nome</label> <br>
+                label é uma identicação
+                <input class="dados-formulario" type="text" id="nome" name="nome" placeholder="Insira seu nome">
+                placeholder é uma legenda para facilitar a utilização                
+            </p>
+
+            <p class="formulario-contato">
+                <label for="contato">Contato</label> <br>
+                label é uma identicação
+                <input class="dados-formulario" type="tel" id="tel" name="tel" placeholder="Insira seu WhatsApp">
+                tel é telefone. em celular, abre o teclado alfanumérico                    
+            </p>
+
+            <p class="formulario-contato">
+                <input type="checkbox" name="office" id="office" value="cursos de office">
+                value é a informação ao lado do checkbox para a pessoa que recebe o form
+                não aparece pro usuário
+                <label for="office">Quero saber mais sobre cursos de Pacote Office</label> <br><br>
+
+                <input type="checkbox" name="web" id="web" value="cursos de desenvolv web">
+                <label for="web">Quero saber mais sobre cursos de desenvolvimento WEB</label> <br><br>
+
+                <input type="checkbox" name="marketing" id="marketing" value="cursos de marketing">
+                <label for="marketing">Quero saber mais sobre cursos de marketing digital</label> <br><br>
+
+            </p>
+
+            <p class="formulario-contato">
+                botões
+                <input type="submit" value="ENVIAR">     
+                <input type="reset" value="LIMPAR">
+
+
+            </p>
+
+        </form>
+    </section> -->
+
+    <br>
+    <br><br>
+
+    <footer>
+        <h3>InfoJobs Ltda.</h3>
+        <h4>Exemplo de Página em JavaScript</h4> <br> 
+        <p class="texto-footer">Contatos:</p>
+        <p class="texto-footer">suporte@infojobs.com</p>
+        <p class="texto-footer">CNPJ: 12.345.678/0001-90</p>     
+    </footer>
+</body>
+</html>
